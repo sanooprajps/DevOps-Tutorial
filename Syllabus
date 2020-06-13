@@ -1,5 +1,35 @@
-Source Control Systems
+1. Source Control Systems
   - GIT
   - Bitbucket (Atlassian)
   - CodeCommit (AWS)
+2. Containers
+  - Docker
+3. Continuous Intergration
+  - Jenkins
+  - Bamboo
+  - CircleCI
+  - AWS (CI/CD) pipeline
+4. IaC (Infrastructure as Code)
+  - Terraform
+  - Terragrunt
+  - Cloudformation
+5. Machine Image builder
+  - Packer
+  - EC2 Image Builder
+6. Scripting Languages
+  - Python
+  - Shell Scripting
+7. AWS
+8. Cloud Security
+9. Commong Tools
+  - Logging
+    - ELK Stack
+    - AWS Cloudwatch
+    - Splunk
+  - Monitoring
+    - Grafana
+    - Nagios
+  - Support Tickets
+    - Pagerduty
+ 10. **Linux**
   
