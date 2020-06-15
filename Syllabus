@@ -2,6 +2,9 @@
   - GIT
   - Bitbucket (Atlassian)
   - CodeCommit (AWS)
+2. Ticketing and Documentaion
+  - Jira
+  - Confluence
 2. Containers
   - Docker
 3. Continuous Intergration
