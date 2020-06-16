@@ -6,6 +6,8 @@
   - Generate secret key
   - Talk about ~/.aws directory
   - ~/.aws/config and ~/.aws/credentials file
+  - AWS credentials precendence
+    - ENV first and then credentials file
   - CLI access using MFA enabled
     https://aws.amazon.com/premiumsupport/knowledge-center/authenticate-mfa-cli/#:~:text=If%20you%20plan%20to%20interact,%3A%3A123456789012%3Amfa%2Fuser.
   - Show the approach with aws-auth script
