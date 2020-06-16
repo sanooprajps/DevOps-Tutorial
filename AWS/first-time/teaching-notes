@@ -4,6 +4,11 @@
 4) AWS CLI access
   - Generate access key
   - Generate secret key
+  - aws configure command
+    https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+    - credentials in credentials file
+    - region in config file
+    - output format if none => default to json
   - Talk about ~/.aws directory
   - ~/.aws/config and ~/.aws/credentials file
   - AWS credentials precendence
