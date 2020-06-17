@@ -1,6 +1,6 @@
 (Get to know AWS!)
 
-    Day1
+        Day1
     
 AWS Getting Started (Account Verification/Access)
 
@@ -17,11 +17,16 @@ IAM
   - Account alias
   - IAM Access Analyzer
   
-    Day 2
+        Day 2
     
 VPC
   - Create VPC
-  - Subnets/Route table/Internet Gateway
+  - All VPC Components like Subnets/Route table/Internet Gateway etc.
+  - VPC Security
+    - Security Group
+    - Network ACLs
+  - Virtual Private Network
+  - Transit Gateways
 
 EC2
 
