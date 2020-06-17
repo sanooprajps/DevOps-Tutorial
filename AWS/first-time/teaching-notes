@@ -1,6 +1,7 @@
 1) Create AWS account
 2) Console login and verify everything is fine!
 3) Check if MFA is enabled?
+   - Type of MFAs (yubikey, MFA)
 4) AWS CLI access
   - Generate access key
   - Generate secret key
