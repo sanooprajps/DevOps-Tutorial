@@ -2,6 +2,9 @@
 2) Console login and verify everything is fine!
 3) Check if MFA is enabled?
    - Type of MFAs (yubikey, MFA)
+   - How to enforce MFA for CLI access. Add separate policy for this.
+     https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html
+     (See attached policy for this)
 4) AWS CLI access
   - Generate access key
   - Generate secret key
