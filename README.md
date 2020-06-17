@@ -7,11 +7,31 @@ AWS Getting Started (Account Verification/Access)
   - CLI Access
   - MFA Enabled scenario using aws-auth
   - Get familiar with AWS profiles when using CLI
+
 IAM
 ---
-
+  - Groups/users/role/policies
+    - AWS managed and inline policies
+  - Assume role
+  - Account alias
+  - IAM Access Analyzer
+  
+   Day 2
+   ----
 EC2
-----
-  - About EC2 instances
-  - Types of EC2 instances
-  - 
+---
+   - Types of compute resources
+    - OnDemand
+    - Reserved Instances
+    - Spot instances
+   - Create EC2 instance
+   - Instance families
+   - Instance types!
+
+ASG(Auto scaling groups)
+---
+
+
+
+    
+  
