@@ -6,7 +6,15 @@
      https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html
      (See attached policy for this)
    - CLI access using MFA and Script
+      Other account assume role
+      ---------
       aws-auth --role-duration-seconds 3600 --role-arn <Role ARN> --serial-number <MFA Serial Num> --token-code <MFA Token>
+      Own account MFA access
+      ---------
+      aws-auth --role-duration-seconds 3600 --serial-number <MFA Serial Num> --token-code <MFA Token>
+      
+      Note:- After every above command run, it will replace entries in ~/.aws/credentials file. You would need to reconfigure every time
+      
 4) AWS CLI access
   - Generate access key
   - Generate secret key
