@@ -5,6 +5,8 @@
    - How to enforce MFA for CLI access. Add separate policy for this.
      https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html
      (See attached policy for this)
+   - CLI access using MFA and Script
+      aws-auth --role-duration-seconds 3600 --role-arn <Role ARN> --serial-number <MFA Serial Num> --token-code <MFA Token>
 4) AWS CLI access
   - Generate access key
   - Generate secret key
