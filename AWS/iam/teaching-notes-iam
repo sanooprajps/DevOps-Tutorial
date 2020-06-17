@@ -2,5 +2,23 @@
 2) Need for Roles/Groups/Users/Policies
 3) Password policy
 4) Assume role from one account to another
+  - Create a role in Destination account and add permission
+  - Create a policy in Source account and give a name to it. Use below json
+    {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "sts:AssumeRole"
+            ],
+            "Resource": [
+                "arn:aws:iam::<ACCTID>:role/sr_xxxx_access"
+            ],
+            "Effect": "Allow",
+            "Sid": "AssumeRoleStmt<AccID>"
+        }
+    ]
+}
+   - Attach this policy to the user and try switch role!
 5) Access Analyzer (Recently launched - 2019 Dec)
 6) Talk about tags in user and other resources and their importance.
