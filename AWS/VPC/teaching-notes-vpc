@@ -1,0 +1,17 @@
+1) Create VPC/Subnets/Routes and add an instance in that VPC
+2) Make the instance reachable from internet (Internet Gateway)
+3) Private and Public subnets
+4) NAT gateway
+5) Difference between Security Group and NACL
+    - Security group is firewall for EC2 instances
+      - Only Allow. Otherwise all debnied. You cannot deny certain rules in Security Group
+      - Security group is only to instances.
+      - Security groups are statefule :- This means any changes applied to an incoming rule will be automatically applied to the outgoing rule. 
+        e.g. If you allow an incoming port 80, the outgoing port 80 will be automatically opened.
+    - NACL is firewall for Subnets
+      - Both allow and deny are supproted
+      - Any instance in the subnets follow NACL rules
+      - Network ACLs are stateless :- This means any changes applied to an incoming rule will not be applied to the outgoing rule. 
+        e.g. If you allow an incoming port 80, you would also need to apply the rule for outgoing traffic.
+    - Subnets can have only one ACL where as instance can have multiple security groups
+   
