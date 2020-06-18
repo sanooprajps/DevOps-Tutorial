@@ -2,3 +2,7 @@ Types of EC2 Instances
   - OnDemand Instance 
   - Reserved Instance (1year/3years) (All upfront/Partially Upfront/No upfront)
   - Spot instances(Bid, Auction)
+- Create EC2 instance
+- EC2 AMI usernames (ubuntu, ec2-user etc.)
+- If windows pem to ppk conversion using puttygen
+- 
