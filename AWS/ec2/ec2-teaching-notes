@@ -1,0 +1,4 @@
+Types of EC2 Instances
+  - OnDemand Instance 
+  - Reserved Instance (1year/3years) (All upfront/Partially Upfront/No upfront)
+  - Spot instances(Bid, Auction)
