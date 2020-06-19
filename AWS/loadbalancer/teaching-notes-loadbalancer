@@ -1,0 +1,23 @@
+Loadbalancer Types
+  - Classic loadbalancer
+  - Application loadbalancer
+  - Network loadbalancer
+
+- Internet facing loadbalancer
+  - Nodes of internet facing loadbalancer have public ips
+  - The DNS name of an Internet-facing load balancer is publicly resolvable to the public IP addresses of the nodes
+  - Internet-facing load balancers can route requests from clients over the Internet
+  
+- Internal loadbalancer
+
+ Discuss Scenario:-
+ 
+  Application having multiple tiers. Webserver is connected to the internet and database server is only connected to the webserver.
+  You can design this architecture using both Internal loadbalancer and Internet facing loadbalancer.
+    - Create an internet facing loadbalancer and register webserver with it
+    - Create an internal loadbalancer and register database server with it
+    - Webserver received traffic from the internet facing loadbalancer and send it to the internal loadbalancer
+    - Database server receives request from the internal loadbalancer
+    
+ - Cross zone loadbalancing need to be enabled to access other avaialability instance. Otherwise in the same AZ it will loadbalance.
+ 
