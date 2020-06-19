@@ -37,10 +37,19 @@ EC2
    - Create EC2 instance
    - Instance families
    - Instance types!
-
-ASG(Auto scaling groups)
----
-
+ 
+         Day 3
+         
+ Loadbalancer
+ 
+   - Types of loabalancer
+        - Classic
+        - Application
+        - Networking
+   - Internal loadbalancer
+   - Internet facing loadbalancer
+   - 
+        
 
 
     
