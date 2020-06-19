@@ -1,12 +1,24 @@
 Loadbalancer Types
   - Classic loadbalancer
+    - Classic Load Balancer provides basic load balancing across multiple Amazon EC2 instances
+  
   - Application loadbalancer
+    - Application Load Balancer is best suited for load balancing of HTTP and HTTPS traffic and provides advanced 
+      request routing targeted at the delivery of modern application architectures, including microservices and containers.
+    - Operating at the individual request level (Layer 7), Application Load Balancer 
+      routes traffic to targets within Amazon Virtual Private Cloud (Amazon VPC) based on the content of the request.
+  
   - Network loadbalancer
+    - Network Load Balancer is best suited for load balancing of Transmission Control Protocol (TCP), User Datagram Protocol (UDP) and Transport Layer Security (TLS) traffic where extreme performance is required. Operating at the connection level (Layer 4), 
+      Network Load Balancer routes traffic to targets within Amazon Virtual Private Cloud (Amazon VPC) and is capable of 
+      handling millions of requests per second while maintaining ultra-low latencies.
+    - Network Load Balancer is also optimized to handle sudden and volatile traffic patterns.
 
 - Internet facing loadbalancer
   - Nodes of internet facing loadbalancer have public ips
   - The DNS name of an Internet-facing load balancer is publicly resolvable to the public IP addresses of the nodes
   - Internet-facing load balancers can route requests from clients over the Internet
+  - Internet facing loadbalancer should be in public subnet
   
 - Internal loadbalancer
   - When an internal load balancer is created, it receives a public DNS name
