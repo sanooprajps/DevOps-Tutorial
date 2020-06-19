@@ -48,7 +48,12 @@ EC2
         - Networking
    - Internal loadbalancer
    - Internet facing loadbalancer
-   - 
+
+ Route 53
+  
+   - Hosted zones
+   - Route 53 healthcheck
+   - Routing policies
         
 
 
