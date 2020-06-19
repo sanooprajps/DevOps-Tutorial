@@ -9,6 +9,11 @@ Loadbalancer Types
   - Internet-facing load balancers can route requests from clients over the Internet
   
 - Internal loadbalancer
+  - When an internal load balancer is created, it receives a public DNS name
+  - The DNS servers resolve the DNS name of your load balancer to the private IP addresses of the load balancer nodes for your internal load balancer.
+  - Each load balancer node is connected to the private IP addresses of the back-end instances using elastic network interfaces
+  - Cross zone loadbalancing need to be enabled to access other avaialability instance. Otherwise in the same AZ it will loadbalance.
+  
 
  Discuss Scenario:-
  
@@ -19,5 +24,5 @@ Loadbalancer Types
     - Webserver received traffic from the internet facing loadbalancer and send it to the internal loadbalancer
     - Database server receives request from the internal loadbalancer
     
- - Cross zone loadbalancing need to be enabled to access other avaialability instance. Otherwise in the same AZ it will loadbalance.
+ 
  
