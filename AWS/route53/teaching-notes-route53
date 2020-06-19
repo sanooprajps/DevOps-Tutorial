@@ -1,0 +1,11 @@
+Route 53
+ - Amazon Route 53 is a scalable and highly available Domain Name System service
+Hosted Zones
+ - A hosted zone is analogous to a traditional DNS zone file; it represents a collection of records that can be 
+   managed together, belonging to a single parent domain name
+ - Public hosted zones
+  - A public hosted zone determines how traffic is routed on the Internet.
+ - Private hosted zones
+  - A private hosted zone determines how traffic is routed within an Amazon VPC. Your resources are not accessible outside the VPC. 
+    You can use any domain name.
+  
