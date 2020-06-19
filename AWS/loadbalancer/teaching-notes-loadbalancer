@@ -37,4 +37,9 @@ Loadbalancer Types
     - Database server receives request from the internal loadbalancer
     
  
- 
+Create Internet facing loadbalancer (Classic loadbalancer)
+
+  - Make sure loadbalancer is created in public subnet
+  - Do a dig and make sure you are getting a public ip for DNS name
+  - In instance security group allow all traffic for the "loadbalancer security group"
+  - Also make sure index.html file is there in apache folder
