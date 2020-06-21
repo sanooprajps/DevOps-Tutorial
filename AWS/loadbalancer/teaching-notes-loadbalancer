@@ -36,10 +36,18 @@ Loadbalancer Types
     - Webserver received traffic from the internet facing loadbalancer and send it to the internal loadbalancer
     - Database server receives request from the internal loadbalancer
     
- 
-Create Internet facing loadbalancer (Classic loadbalancer)
+Demo:-
+
+1) Create Internet facing loadbalancer (Classic loadbalancer & Application loadbalancer)
 
   - Make sure loadbalancer is created in public subnet
   - Do a dig and make sure you are getting a public ip for DNS name
   - In instance security group allow all traffic for the "loadbalancer security group"
   - Also make sure index.html file is there in apache folder
+  - For healthcheck to succeede you would need to create a dummy index.html in the /var/www/ path. Or just try giving /html/index.html in the healthcheck
+
+2) Show how loadbalancer load balance the traffic
+  - Create two ec2 instances in public subnet. Enable public ip also, though its not required.
+  - Install apache2 in it. And update index.html to distinguish two apps(Like include strings like first and second app)
+  - Create a classis/app loadbalancer and add these two instances.
+  - You should see two diferent app coming up!
