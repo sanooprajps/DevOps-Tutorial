@@ -35,3 +35,9 @@ Created Private Hostedzone
 2) Create private hosted zone for a specific VPC
 3) Create a A record with the private IP of the instance
 4) Loginto any instance in that VPC and do a "dig +short <hostname>"
+
+[ Create an internal loadbalancer and add two instances having apache in it to the loadbalancer. Add this to a DNS name locally 
+resolvable. Refer previous section of loadbalancer also!]
+
+5) Create a record with type "A record IPV4" and then tick "Alias".  From the alias target select the internal loadbalancer DNS name.
+
