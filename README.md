@@ -57,7 +57,11 @@ EC2
         
          Day 4
          
- Auto Scaling Groups
+ Auto Scaling Groups (ASG)
+ 
+   - Launch configuration
+   - Launch template
+   - 
  
  Storage
  
