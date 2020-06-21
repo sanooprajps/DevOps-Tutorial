@@ -55,7 +55,27 @@ EC2
    - Route 53 healthcheck
    - Routing policies
         
+         Day 4
+         
+ Auto Scaling Groups
+ 
+ Storage
+ 
+         Day 5
+  
+  ECR (Elastic Container Registry)
+  
+  ECS (Elastic Container Service)
 
-
+        Day 6
+   
+   Logging Options
+   Cloudwatch
+   Cloudtrail
+   Access logs
+   ??
+   
+        Day 7
     
+   Debugging
   
