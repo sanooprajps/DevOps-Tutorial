@@ -64,3 +64,4 @@ Also, for loadbalancer secutiy group enable port 80 access from VPC subnet!
   - Create an internal loadbalancer using "Application loadbalancer" and add these two instances are targets.
   - Do a dig and see if you are getting private ip for the loadbalancer debug.
   - Do a curl and see if you are getting the apache page for each app on each query.
+[ Create a private hostedzone and add this DNS name in that. Refer next lecture on Route 53. Club these two.]
