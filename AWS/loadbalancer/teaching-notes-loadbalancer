@@ -38,6 +38,12 @@ Loadbalancer Types
     
 Demo:-
 
+Prerequisites :- For instance security group allow following.
+Port 22,80, - VPC subnet
+All hosts ICMP
+All traffic/port traffic from loadbalancer security group
+Also, for loadbalancer secutiy group enable port 80 access from VPC subnet!
+
 1) Create Internet facing loadbalancer (Classic loadbalancer & Application loadbalancer)
 
   - Make sure loadbalancer is created in public subnet
@@ -51,3 +57,10 @@ Demo:-
   - Install apache2 in it. And update index.html to distinguish two apps(Like include strings like first and second app)
   - Create a classis/app loadbalancer and add these two instances.
   - You should see two diferent app coming up!
+
+3) Create an Internal loadbalancer (Application loadbalancer)
+  - Create two EC2 instances in the private subnet and having no public ip ;)!
+  - Install apache2 in it and update apache configuration to differentiate two apps.
+  - Create an internal loadbalancer using "Application loadbalancer" and add these two instances are targets.
+  - Do a dig and see if you are getting private ip for the loadbalancer debug.
+  - Do a curl and see if you are getting the apache page for each app on each query.
