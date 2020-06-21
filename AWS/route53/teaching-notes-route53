@@ -24,3 +24,14 @@ Latency routing policy – Use when you have resources in multiple AWS Regions a
 Multivalue answer routing policy – Use when you want Route 53 to respond to DNS queries with up to eight healthy records selected at random.
 
 Weighted routing policy – Use to route traffic to multiple resources in proportions that you specify.
+
+Created Private Hostedzone
+--------
+1) Goto VPC -> Actions -> And update following DNS settings to true
+   "Edit DNS Resolutions" & "Edit DNS Hostnames"
+   Note:- Above commands enables following two flags
+          enableDnsHostnames
+          enableDnsSupport
+2) Create private hosted zone for a specific VPC
+3) Create a A record with the private IP of the instance
+4) Loginto any instance in that VPC and do a "dig +short <hostname>"
