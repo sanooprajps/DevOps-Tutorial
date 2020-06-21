@@ -32,7 +32,7 @@ Created Private Hostedzone
    Note:- Above commands enables following two flags
           enableDnsHostnames
           enableDnsSupport
-2) Create private hosted zone for a specific VPC
+2) Create private hosted zone for a specific VPC. Give some ".com" name, like "mydomain.com"
 3) Create a A record with the private IP of the instance
 4) Loginto any instance in that VPC and do a "dig +short <hostname>"
 
