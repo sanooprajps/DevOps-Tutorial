@@ -31,9 +31,9 @@ VPC
 EC2
 
    - Types of compute resources
-    - OnDemand
-    - Reserved Instances
-    - Spot instances
+        - OnDemand
+        - Reserved Instances
+        - Spot instances
    - Create EC2 instance
    - Instance families
    - Instance types!
