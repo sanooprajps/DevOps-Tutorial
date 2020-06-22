@@ -1,4 +1,5 @@
 S3 (Simple Storage Service)
+
  - Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Services that provides object storage 
    through a web service interface. 
  Tasks:-
@@ -8,6 +9,7 @@ S3 (Simple Storage Service)
   - Talk about unique name
 
 EBS (Elastic block store service)
+
  - Amazon Elastic Block Store (EBS) is an easy to use, high performance block storage service designed for use with 
    Amazon Elastic Compute Cloud (EC2) for both throughput and transaction intensive workloads at any scale
    
@@ -16,3 +18,8 @@ Snapshot is the point in time backup for the Volume.
 
 What is AMI?
 AMI is the backup of entire EC2 instance. That might have multiple attached volumes.
+
+EFS (Elastic File System)
+
+ - Amazon EFS is a regional service storing data within and across multiple 
+   Availability Zones (AZs) for high availability and durability
