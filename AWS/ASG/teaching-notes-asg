@@ -1,0 +1,37 @@
+An Auto Scaling group contains a collection of Amazon EC2 instances that are treated as a logical grouping for the purposes 
+of automatic scaling and management. Both maintaining the number of instances in an Auto Scaling group and automatic scaling 
+are the core functionality of the Amazon EC2 Auto Scaling service.
+
+- Difference between lauch configuration and launch tempalte
+
+Launch tempalte is same like Lauch configuration. Provided, launch template allows you to have multiple version of the template.
+AWS recommends to use launch template instead of launch configuration.
+Also, you are allowed to add multiple instance types instead of one single type so for example you have specific workload 
+you can run fixed number of instances as on-demand or spot instances.
+
+- Talk about scaling policies
+
+A scaling policy is a set of instructions for making such adjustments in response to an Amazon CloudWatch alarm that 
+you assign to it. In each policy, you can choose to add or remove a specific number of instances or a percentage of 
+the existing group size, or you can set the group to an exact size.  When the alarm triggers, it will execute the policy 
+and adjust the size of your group accordingly.
+
+- 
+
+Demo:-
+
+1) Create launch configuration or launch template initially
+  - Create auto scaling group using the launch config/template
+  
+Note: Here goto tags and show the importance of tags. Show ASG tags/Launch template tags.
+
+2) How to add Application loadbalancer to Auto Scaling Groups?
+  - Create application loadbalancer
+  - In the target group section dont' add any instances. If you are adding instance other than ASG then add instance here (listeners)
+  - Now, goto ASG.
+  - Create launch template
+  - Edit ASG and update target group as the same name created during ALB creation.
+
+
+
+
