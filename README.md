@@ -61,10 +61,15 @@ EC2
  
    - Launch configuration
    - Launch template
-   - 
+   - Scaling policies
+   - Loadbalancer to ASG
  
  Storage
  
+   - S3
+   - EBS
+   - EFS
+   
          Day 5
   
   ECR (Elastic Container Registry)
