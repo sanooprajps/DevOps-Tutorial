@@ -70,9 +70,10 @@ EC2
    - EBS
    - EFS
    
-         Day 5
+    Day 5
   
   ECR (Elastic Container Registry)
+  
   ECS (Elastic Container Service)
 
          Day 6
