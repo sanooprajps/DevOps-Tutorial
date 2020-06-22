@@ -31,7 +31,7 @@ Note: Here goto tags and show the importance of tags. Show ASG tags/Launch templ
   - Now, goto ASG.
   - Create launch template
   - Edit ASG and update target group as the same name created during ALB creation.
-
+(Home work!)
 
 
 
