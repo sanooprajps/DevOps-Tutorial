@@ -70,12 +70,12 @@ EC2
    - EBS
    - EFS
    
-        Day 5
+         Day 5
   
   ECR (Elastic Container Registry)
   ECS (Elastic Container Service)
 
-        Day 6
+         Day 6
    
    Logging Options
    Cloudwatch
@@ -83,7 +83,7 @@ EC2
    Access logs
    ??
    
-        Day 7
+         Day 7
     
    Debugging
   
