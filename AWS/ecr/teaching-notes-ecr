@@ -1,0 +1,15 @@
+Create docker image using the Dockerfile attached.
+
+docker build -t demo-app .
+
+Login to ECR
+(Look at the View Push Commands option and their commands.)
+
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 119131561188.dkr.ecr.us-east-1.amazonaws.com
+docker build -t sanoop-test .
+docker tag sanoop-test:latest 119131561188.dkr.ecr.us-east-1.amazonaws.com/sanoop-test:latest
+docker push 119131561188.dkr.ecr.us-east-1.amazonaws.com/sanoop-test:latest
+
+Loginto ECR and make sure image is uploaded.
+
+
