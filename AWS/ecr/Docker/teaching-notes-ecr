@@ -3,7 +3,9 @@ Using the docker file provided, build a docker image and run it.
 docker build -t demo-app .
 docker run -it <ContainerID>
 
-Push the image to the AWS ECR
+AUthenticate to ECR and push the file.(Check view push commands for the commands)
 
-AUthenticate to ECR and push the file.
+aws ecr get-login-password --region us-east-1
+
+
 
