@@ -1,0 +1,9 @@
+ECS - Logical grouping of EC2 instances that you can place your containers into
+ECS Agent - Manages the state of container on a EC2 instance. This is how ECS communicates with the dockers.
+
+1. Create the the cluster
+2. Once the cluster is up and running we need to create a ECS task
+  - Deployes ECS container onto EC2 instance in the cluster
+  - Need amazon ECS task defenition template for running one more tasks. This is the docker image for the container/cpu/memory/storage/links between container etc.
+  
+
