@@ -8,6 +8,14 @@ S3 (Simple Storage Service)
   - Show other features.
   - Talk about unique name
 
+S3 Storage Class:-
+
+1. S3 Standard
+2. S3 Interlliegent-Tiering
+3. S3 Standard IA
+4. S3 Standard One Zone IA
+5. S3 Glacier 
+
 EBS (Elastic block store service)
 
  - Amazon Elastic Block Store (EBS) is an easy to use, high performance block storage service designed for use with 
