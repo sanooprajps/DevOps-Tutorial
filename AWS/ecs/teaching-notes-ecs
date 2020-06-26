@@ -2,6 +2,24 @@ ECS - Logical grouping of EC2 instances that you can place your containers into
 ECS Agent - Manages the state of container on a EC2 instance. This is how ECS communicates with the dockers.
 
 1. Create the the cluster
+
+Task Defenition:- 
+A Task Definition is a collection of 1 or more container configurations. Some Tasks may need only one container, while other Tasks may need 2 or more potentially 
+linked containers running concurrently. The Task definition allows you to specify which Docker image to use, which ports to expose, how much CPU and memory to 
+allot, how to collect logs, and define environment variables.
+
+Tasks:-
+A Task is created when you run a Task directly, which launches container(s) (defined in the task definition) until they are stopped or exit on their own, 
+at which point they are not replaced automatically. Running Tasks directly is ideal for short running jobs, perhaps as an example things that were accomplished 
+via CRON.
+
+
+Service:-
+A Service is used to guarantee that you always have some number of Tasks running at all times. If a Task's container exits due to error, or the underlying EC2 
+This is why we create Clusters so that the Service has plenty of resources in terms of CPU, Memory and Network ports to use. To us it doesn't really matter which
+instance Tasks run on so long as they run. A Service configuration references a Task definition. A Service is responsible for creating Tasks.instance fails and is 
+replaced, the ECS Service will replace the failed Task.
+
 2. Once the cluster is up and running we need to create a ECS task
   - Deployes ECS container onto EC2 instance in the cluster
   - Need amazon ECS task defenition template for running one more tasks. This is the docker image for the container/cpu/memory/storage/links between container etc.
