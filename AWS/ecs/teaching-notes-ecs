@@ -1,7 +1,16 @@
 ECS - Logical grouping of EC2 instances that you can place your containers into
 ECS Agent - Manages the state of container on a EC2 instance. This is how ECS communicates with the dockers.
 
+Ref :-
+https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d
+
+Pre requisites:-
+Have two security groups. One for EC2 access (Have vpc subnet allowed for 80 and loadbalancer sg allowed for 80) and another for 
+loadbalancer access (Have own ip allowed for 80)
+
 1. Create the the cluster
+    Note :- Make sure to a slightly bigger instance to avoid memory issue. Just try m5.large for this.
+    - Check if ec2 instance is created after this.
 
 Task Defenition:- 
 A Task Definition is a collection of 1 or more container configurations. Some Tasks may need only one container, while other Tasks may need 2 or more potentially 
@@ -20,8 +29,12 @@ This is why we create Clusters so that the Service has plenty of resources in te
 instance Tasks run on so long as they run. A Service configuration references a Task definition. A Service is responsible for creating Tasks.instance fails and is 
 replaced, the ECS Service will replace the failed Task.
 
-2. Once the cluster is up and running we need to create a ECS task
-  - Deployes ECS container onto EC2 instance in the cluster
-  - Need amazon ECS task defenition template for running one more tasks. This is the docker image for the container/cpu/memory/storage/links between container etc.
-  
-
+2. Create a task defenition 
+    - Give container source and destination port as 80
+3. Create a Application loadbalancer and keep targetgroup as empty. But give a meaningful name.
+  - Create a internet facing loadbalancer
+  - Remember to create in public subnet
+4. Create service from task definition. Click on task def and actions and create service
+  - Create only one service
+5. Check if service and task is created after this without any error.
+6. Open loadbalancer DNS name in a browser and see if you are able to see the contents.
