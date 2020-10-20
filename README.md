@@ -86,5 +86,7 @@ EC2
    
          Day 7
     
+   System Manager
+   
    Debugging
   
